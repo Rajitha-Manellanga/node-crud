@@ -12,7 +12,7 @@ module.exports = {
         try {
                 // Connect to the MongoDB cluster
             client = await mClient.connect();
-            _db = client.db("stregdb");
+            _db = client.db("regdb");
             return _db;
 
          

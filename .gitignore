@@ -103,4 +103,10 @@ dist
 # TernJS port file
 .tern-port
 
-.mp4
+# macOS Files
+.DS_Store
+
+cypress/screenshots
+cypress/fixtures
+cypress/videos
+
