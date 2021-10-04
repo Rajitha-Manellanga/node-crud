@@ -27,15 +27,3 @@ it('/Register with body ',()=>{
  
 }); 
 
-// it('/Register without body',()=>{
-  
-//     cy.request({
-//       method: 'POST',
-//       url: 'http://localhost:3000/api/user/register',
-//       failOnStatusCode: false
-//     }).then((response)=>{
-//       expect(response.status).to.eq(400);
-//     });
-  
-   
-//   }); 
