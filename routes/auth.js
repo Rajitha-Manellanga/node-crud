@@ -9,9 +9,10 @@ router.post('/register', async (req,res)=>{
        
     {
         regno: req.body.regno,
+        age: req.body.age,
         name:[{
             fname: req.body.name.fname,
-            lname: req.body.name.lname
+            lname: req.body.name.lname,
         }]
     }
     );
@@ -21,7 +22,7 @@ router.post('/register', async (req,res)=>{
          _db = await client;
         const savedUser = await _db.collection('users').insertOne(user);
         console.log(`A document was inserted with the _id: ${savedUser.insertedId}`);
-        res.send(savedUser);
+        res.send(user);
         
     } catch (error) {
         console.log(error);

@@ -6,6 +6,9 @@ const userSchema = Schema({
         type: String,
         required: true,
     },
+    "age":{
+        type: Number
+    },
     "name":[{
         "fname":{ type:String, required:true},
         "lname":{ type:String, required:true}
